@@ -25,12 +25,15 @@ pipeline{
             steps{ 
                 sh """
 
-                    sudo apt-get install nginx -y 
+                    cd /var/www
 
-                    sudo systemctl enable nginx 
+                    rm -rf hmtl
 
+                    mkdir html
 
-                    sudo systemctl start nginx
+                    cd html
+
+                    git clone https://github.com/OnlySalam/Simple_jenkins.git .
 
 
 
