@@ -27,7 +27,7 @@ pipeline{
 
                     cd /var/www
 
-                    rm -rf hmtl
+                    rm -rf html
 
                     mkdir html
 
