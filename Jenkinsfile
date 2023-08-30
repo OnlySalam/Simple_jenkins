@@ -21,7 +21,7 @@ pipeline{
 
         }
 
-        stage{ 
+        stage("host website"){ 
             steps{ 
                 sh """
 
@@ -35,9 +35,7 @@ pipeline{
 
 
 
-
-
-                    """
+                 """
             }
         }
     }
